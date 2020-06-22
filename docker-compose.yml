@@ -1,0 +1,16 @@
+version: "3.2"
+services:
+  whiteboard:
+    build: .
+    command: pm2-runtime start ecosystem.config.js
+    container_name: 'whiteboard'
+    volumes:
+      - .:/code
+    ports:
+      - "3000:3000"
+    networks:
+      - docker-network
+
+networks:
+  docker-network:
+    driver: bridge

@@ -1,25 +1,27 @@
 {
-  "name": "whiteboard-js",
-  "version": "1.0.0",
-  "description": "html canvas, multi-user whiteboard",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MattdeGuehery/whiteboard-js.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/MattdeGuehery/whiteboard-js/issues"
-  },
-  "homepage": "https://github.com/MattdeGuehery/whiteboard-js#readme",
-  "dependencies": {
-    "express": "^4.17.1",
-    "http": "0.0.1-security",
-    "socket.io": "^2.3.0"
-  }
+	"name": "whiteboard-js",
+	"version": "1.0.0",
+	"description": "html canvas, multi-user whiteboard",
+	"main": "server.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"debug": "node server.js",
+		"start": "pm2-runtime start ecosystem.config.js --env production"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/MattdeGuehery/whiteboard-js.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/MattdeGuehery/whiteboard-js/issues"
+	},
+	"homepage": "https://github.com/MattdeGuehery/whiteboard-js#readme",
+	"dependencies": {
+		"express": "^4.17.1",
+		"http": "0.0.1-security",
+		"pm2": "^4.4.0",
+		"socket.io": "^2.3.0"
+	}
 }
