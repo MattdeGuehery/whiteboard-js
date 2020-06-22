@@ -4,4 +4,3 @@ ADD . /code
 WORKDIR /code
 RUN npm install pm2 -g
 RUN npm install
-CMD ["pm2-runtime", "ecosystem.config.js"]
