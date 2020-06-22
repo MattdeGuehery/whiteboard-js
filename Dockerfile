@@ -1,3 +1,4 @@
+FROM node:lts-alpine3.9
 RUN mkdir /code
 ADD . /code
 WORKDIR /code
